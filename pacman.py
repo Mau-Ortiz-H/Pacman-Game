@@ -99,10 +99,10 @@ def move():
     for ghost in ghosts:
         if ghost[0].x % 20 == 0 and ghost[0].y % 20 == 0:
             options = [
-                vector(5, 0),
-                vector(-5, 0),
-                vector(0, 5),
-                vector(0, -5),
+                vector(10, 0),
+                vector(-10, 0),
+                vector(0, 10),
+                vector(0, -10),
             ]
             valid_options = [d for d in options if valid(ghost[0] + d)]
             if valid_options:
